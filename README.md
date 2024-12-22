@@ -1,5 +1,5 @@
-### ENCODER 8TO3 DATAFLOW Modelling
-
+### Exp No : 5 ENCODER 8TO3 DATAFLOW Modelling
+## Date : 24/10/2024
 **AIM:**
 
 To implement  Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables
@@ -39,13 +39,16 @@ An encoder is a digital circuit that converts a set of binary inputs into a uniq
 
 **PROGRAM**
 Developed by: ATCHAYA B
+
 RegisterNumber:24900268
+```
 module encoder (a, b, c, y0, y1, y2, y3,y4, y5,y6,y7);
 input yo, y1, y2,y3,y4, y5, y6, y7;
 output a,b,c;
 assign a= (y4 y5 | y6 | y7);
 assign b= (y2 y3 | y6 | y7);
 assign c= (y1 | y3 | y5 | y7);
+```
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
 ![exp 5 1 rtl](https://github.com/user-attachments/assets/415ae488-a716-4232-b612-ffd20e780bee)
